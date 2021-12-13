@@ -23,20 +23,20 @@ const NewsLetter = () => {
           />
         </div>
         <div className="flex flex-col gap-10 mt-14 sm:flex-row">
-          <div>
+          <div className="">
             <p className="font-light text-gray-400 sm:w-2/3">
               Your privacy is important to us. We always keep your data secure.
               You can
-              <span className="px-1 font-medium hover:underline text-secBlack-default ">
+              <span className="px-1 font-medium cursor-pointer hover:underline text-secBlack-default">
                 unsubscribe
               </span>
               from our newsletter at any time. You can view our
-              <span className="px-1 font-medium hover:underline text-secBlack-default ">
+              <span className="px-1 font-medium cursor-pointer hover:underline text-secBlack-default">
                 privacy policy here.
               </span>
             </p>
           </div>
-          <div className="flex justify-end cursor-pointer md:pr-96">
+          <div className="flex justify-end cursor-pointer 2xl:pr-96">
             <a
               href="#_"
               className="flex items-center justify-center w-40 font-medium text-center text-white uppercase h-14 bg-primary-default"

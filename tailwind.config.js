@@ -31,6 +31,7 @@ module.exports = {
         customspace: "77%",
         customheight: "90%",
         customheightsec: "60%",
+        footer: "75vh",
       },
       backgroundImage: {
         hero: "url('/assets/climbing.jpg')",
