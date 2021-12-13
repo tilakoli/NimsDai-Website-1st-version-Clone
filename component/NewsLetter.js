@@ -3,11 +3,11 @@ import React from "react";
 const NewsLetter = () => {
   return (
     <>
-      <div className="flex flex-col w-screen h-screen gap-10 px-10 sm:px-48">
-        <h1 className="mb-12 text-3xl font-bold text-secBlack-default ">
+      <div className="flex flex-col w-screen h-screen gap-10 px-10 sm:px-48 xl:px-72">
+        <h1 className="mb-12 text-3xl font-bold xl:text-5xl text-secBlack-default ">
           Our newsletter
         </h1>
-        <p className="font-sans text-secBlack-default">
+        <p className="font-sans text-secBlack-default xl:text-xl">
           Sign up to the Nimsdai newsletter for our latest news & announcements.
         </p>
         <div className="flex flex-col gap-10 font-sans border-none sm:flex-row">
@@ -36,8 +36,11 @@ const NewsLetter = () => {
               </span>
             </p>
           </div>
-          <div className="flex justify-end">
-            <a className="flex items-center justify-center w-40 font-medium text-center text-white uppercase h-14 bg-primary-default">
+          <div className="flex justify-end cursor-pointer md:pr-96">
+            <a
+              href="#_"
+              className="flex items-center justify-center w-40 font-medium text-center text-white uppercase h-14 bg-primary-default"
+            >
               subscribe
             </a>
           </div>
