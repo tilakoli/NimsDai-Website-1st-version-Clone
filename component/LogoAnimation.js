@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const LogoAnimation = () => {
   const [ref, inView] = useInView({
     threshold: 0.3,
+    // triggerOnce: true,
   });
   // STEP:2
   const animation = useAnimation();

@@ -6,11 +6,11 @@ import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import Image from "next/image";
 
-const Card = ({ head, title, date }) => {
+const Card = ({ head, title, date, image }) => {
   // STEP:1
   //  destructuring the useInView hook
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
   });
   // STEP:2
   const animation = useAnimation();
@@ -22,7 +22,7 @@ const Card = ({ head, title, date }) => {
       animation.start({
         opacity: 1,
         x: 0,
-        transition: { type: "spring", bounce: 0.5 },
+        transition: { type: "just", ease: "easeInOut", duration: 0.3 },
       });
     }
     if (!inView) {
@@ -45,7 +45,7 @@ const Card = ({ head, title, date }) => {
           <a href="#" className="hover:scale-100">
             <img
               className="object-fill transition-all duration-200 ease-in-out transform bg-center hover:scale-95 "
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
+              src={image}
               alt=""
             />
           </a>

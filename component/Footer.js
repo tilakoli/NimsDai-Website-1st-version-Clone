@@ -1,5 +1,4 @@
 import Image from "next/image";
-import LogoAnimation from "./LogoAnimation";
 const Footer = () => {
   return (
     <>
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row col1 h-1/2 sm:h-3/4">
           <div className="items-center justify-center hidden w-full h-full sm:flex sm:w-1/3">
             <img
-              src="/assets/LogowithName.svg"
+              src="/assets/FooterLogo.svg"
               className="w-auto h-64 "
               layout="responsive"
             />

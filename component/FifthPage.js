@@ -5,9 +5,15 @@ import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import Image from "next/image";
 const FifthPage = () => {
-  const [ref, inView] = useInView({});
-  const [ref2, inView2] = useInView({});
-  const [ref3, inView3] = useInView({});
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
+  const [ref2, inView2] = useInView({
+    threshold: 0.1,
+  });
+  const [ref3, inView3] = useInView({
+    threshold: 0.1,
+  });
   // STEP:2
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -20,7 +26,7 @@ const FifthPage = () => {
       animation.start({
         opacity: 1,
         y: 0,
-        transition: { type: "spring", bounce: 0.5, duration: 0.5 },
+        transition: { type: "just", ease: "easeInOut", duration: 0.3 },
       });
     }
     if (!inView) {
@@ -37,7 +43,7 @@ const FifthPage = () => {
       animation2.start({
         opacity: 1,
         y: 0,
-        transition: { type: "spring", bounce: 0.5, duration: 0.5 },
+        transition: { type: "just", ease: "easeInOut", duration: 0.3 },
       });
     }
     if (!inView2) {
@@ -54,7 +60,7 @@ const FifthPage = () => {
       animation3.start({
         opacity: 1,
         y: 0,
-        transition: { type: "spring", bounce: 0.5, duration: 0.5 },
+        transition: { type: "just", ease: "easeInOut", duration: 0.3 },
       });
     }
     if (!inView3) {
@@ -78,7 +84,7 @@ const FifthPage = () => {
               <motion.h3
                 ref={ref}
                 animate={animation}
-                className="pt-3 text-2xl font-semibold sm:leading-8 sm:pt-0 sm:text-4xl lg:text-5xl"
+                className="pt-3 text-2xl font-semibold sm:leading-8 sm:pt-16 sm:text-4xl lg:text-5xl"
               >
                 1:1 guiding, our <br /> chosen approach
               </motion.h3>
@@ -93,7 +99,16 @@ const FifthPage = () => {
                 support and leadership on the mountain
               </motion.p>
               <motion.div ref={ref} animate={animation}>
-                <a className="text-sm font-medium sm:text-xl">LEARN MORE</a>
+                <a
+                  className="flex items-center gap-4 text-sm font-medium cursor-pointer sm:text-xl"
+                  href="#_"
+                >
+                  <img
+                    className="w-auto h-10 cursor-pointer"
+                    src="/assets/Icons/arrowright.png"
+                  />
+                  <p>LEARN MORE</p>
+                </a>
               </motion.div>
             </div>
           </div>
@@ -119,7 +134,16 @@ const FifthPage = () => {
                 top.
               </motion.p>
               <motion.div ref={ref2} animate={animation2}>
-                <a className="text-sm font-medium sm:text-xl">LEARN MORE </a>
+                <a
+                  className="flex items-center gap-4 text-sm font-medium cursor-pointer sm:text-xl"
+                  href="#_"
+                >
+                  <img
+                    className="w-auto h-10 cursor-pointer"
+                    src="/assets/Icons/arrowright.png"
+                  />
+                  <p>LEARN MORE</p>
+                </a>
               </motion.div>
             </div>
           </div>
@@ -146,7 +170,16 @@ const FifthPage = () => {
                 elite mountaineering leadership.
               </motion.p>
               <motion.div ref={ref3} animate={animation3}>
-                <a className="text-sm font-medium sm:text-xl">LEARN MORE </a>
+                <a
+                  className="flex items-center gap-4 text-sm font-medium cursor-pointer sm:text-xl"
+                  href="#_"
+                >
+                  <img
+                    className="w-auto h-10 cursor-pointer"
+                    src="/assets/Icons/arrowright.png"
+                  />
+                  <p>LEARN MORE</p>
+                </a>
               </motion.div>
             </div>
           </div>

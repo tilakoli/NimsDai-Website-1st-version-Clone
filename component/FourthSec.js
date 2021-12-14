@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 const FourthSec = () => {
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
   });
   const animation = useAnimation();
   useEffect(() => {
@@ -13,13 +13,13 @@ const FourthSec = () => {
       animation.start({
         opacity: 1,
         y: 0,
-        transition: { type: "spring", bounce: 0.5, duration: 0.5 },
+        transition: { type: "just", ease: "easeInOut", duration: 0.3 },
       });
     }
     if (!inView) {
       animation.start({
         opacity: 0.4,
-        y: 100,
+        y: 200,
       });
     }
   }, [inView]);
@@ -31,7 +31,7 @@ const FourthSec = () => {
           <p className="font-light"> High altitude expedition leader</p>
         </div>
         <div className="flex gap-3 p-5 text-2xl sm:text-6xl 2xl:w-3/5 2xl:mx-auto">
-          <img
+          <motion.img
             src="/assets/straight-quotes.png"
             className="w-10 h-10 sm:h-14"
           />
