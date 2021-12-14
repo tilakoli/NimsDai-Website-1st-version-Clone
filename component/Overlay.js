@@ -44,9 +44,9 @@ const Overlay = () => {
       >
         <a href="#_">
           <img
-            src="/assets/arrowright.png"
+            src="/assets/Icons/arrowright.png"
             alt="Watch Trailer"
-            className="w-auto h-10 cursor-pointer bg-back "
+            className="w-auto h-10 cursor-pointer"
           />
         </a>
         <p className="capitalize">Watch Trailer</p>

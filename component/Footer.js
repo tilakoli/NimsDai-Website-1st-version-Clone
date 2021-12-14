@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
@@ -12,12 +11,42 @@ const Footer = () => {
           {/* ------------------------- SECOND COLUMN ------------------------- */}
           <div className="flex w-full h-full sm:w-2/3 ">
             {/* ---------------------columns INSIDE SECOND COLUMN ------------------- */}
-            <div className="w-1/2 h-full bg-gray-400 sm:w-1/3 col1 "></div>
-            <div className="w-1/2 h-full bg-gray-500 sm:w-1/3 col2 "></div>
-            <div className="hidden w-1/3 h-full bg-gray-600 col3 sm:block"></div>
+            <div className="flex flex-col items-center justify-center w-1/2 h-full sm:w-1/3 col1 ">
+              <div>
+                <h2 className="font-bold text-test-default sm:pb-12 text-md sm:text-xl ">
+                  Enquiries
+                </h2>
+              </div>
+              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+                <a>General</a>
+                <a>Guiding</a>
+                <a>Speaking</a>
+                <a>FAQs</a>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-1/2 h-full sm:w-1/3 col2">
+              <div>
+                <h2 className="font-bold text-test-default sm:pb-12 text-md sm:text-xl ">
+                  Quick links
+                </h2>
+              </div>
+              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+                <a>1:1 Guiding</a>
+                <a>Fast-Track</a>
+                <a>Everest</a>
+                <a>K2 Winter</a>
+              </div>
+            </div>
+            <div className="flex-col justify-center hidden w-1/3 h-full sm:pt-16 col3 sm:flex">
+              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+                <a>The Six Elements</a>
+                <a>Nimsdai Purja MBE</a>
+                <a>Project Possible</a>
+                <a>Beyond Possible</a>
+              </div>
+            </div>
           </div>
         </div>
-        {/* <hr className="w-11/12 h-1 mx-auto " /> */}
         {/* --------------------_SECOND COLUMN ----------------------- */}
         <div className="flex flex-col w-11/12 mx-auto border-t-2 border-gray-300 sm:flex-row h-1/2 sm:h-auto ">
           <div className="flex items-start justify-between w-full pt-8 sm:h-full h-1/3 sm:w-3/12 icons">
@@ -55,11 +84,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex flex-col items-center justify-between w-full h-full text-sm text-center text-gray-500 sm:pl-20 sm:pt-8 sm:gap-0 sm:items-start sm:flex-row sm:w-3/4">
-            <a>Terms & Conditions</a>
-            <a>Privacy Policy</a>
-            <a className="mb-4 sm:mb-0">Cookie Policy</a>
-            <a>@ Nimsdai 2021</a>
-            <a>Made in NextJs</a>
+            <a className="cursor-pointer">Terms & Conditions</a>
+            <a className="cursor-pointer">Privacy Policy</a>
+            <a className="mb-4 cursor-pointer sm:mb-0">Cookie Policy</a>
+            <a className="cursor-pointer">@ Nimsdai 2021</a>
+            <a className="cursor-pointer">Made in NextJs</a>
           </div>
         </div>
       </div>

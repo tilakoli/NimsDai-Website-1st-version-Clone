@@ -6,7 +6,7 @@ const SecondSec = () => {
         <div className="flex flex-col items-center w-full mt-8 sm:mt-0 sm:flex-row gap-7 sm:gap-0 sm:h-4/6 2xl:px-60">
           <div className="flex items-center h-full sm:w-1/3 sm:pl-44 ">
             <img
-              src="/assets/logo.svg"
+              src="/assets/LogowithName.svg"
               className="w-auto h-64 "
               layout="responsive"
             />

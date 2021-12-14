@@ -18,6 +18,7 @@ const Card = ({ head, title, date }) => {
   // useEffect hook to animate the element when it is in viewport
   useEffect(() => {
     if (inView) {
+      // console.log(inView);
       animation.start({
         opacity: 1,
         x: 0,
@@ -25,6 +26,8 @@ const Card = ({ head, title, date }) => {
       });
     }
     if (!inView) {
+      // console.log(inView, "not in view");
+
       animation.start({
         opacity: 0.3,
         x: 200,
