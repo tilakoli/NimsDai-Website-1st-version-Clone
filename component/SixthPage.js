@@ -1,3 +1,5 @@
+import LogoAnimation from "./LogoAnimation";
+
 const SixthPage = () => {
   return (
     <>
@@ -6,7 +8,8 @@ const SixthPage = () => {
           <h2 className="flex flex-col items-center text-3xl font-medium capitalize sm:flex-row text-secBlack-default">
             Achieve Your
             <span className="">
-              <img src="/assets/Logo.svg" className="w-auto h-80"></img>
+              <LogoAnimation />
+              {/* <img src="/assets/Logo.svg" className="w-auto h-80"></img> */}
             </span>
             new Possible
           </h2>

@@ -5,7 +5,6 @@ import FourthSec from "../component/FourthSec";
 import LandingPage from "../component/LandingPage";
 import LogoAnimation from "../component/LogoAnimation";
 import NewsLetter from "../component/NewsLetter";
-import OldLogoanimation from "../component/OldLogoanimation";
 import SecondSec from "../component/SecondSec";
 import SixthPage from "../component/SixthPage";
 import ThirdSec from "../component/ThirdSec";
@@ -19,7 +18,6 @@ export default function Home() {
       </Head>
       <LandingPage />
       <SecondSec />
-      <LogoAnimation />
       <ThirdSec />
       <FourthSec />
       <FifthPage />

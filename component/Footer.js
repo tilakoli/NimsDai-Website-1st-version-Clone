@@ -1,12 +1,17 @@
 import Image from "next/image";
+import LogoAnimation from "./LogoAnimation";
 const Footer = () => {
   return (
     <>
-      <div className="w-screen h-screen bg-footerBlack-default lg:h-footer ">
+      <div className="w-screen h-screen mt-16 sm:mt-0 bg-footerBlack-default lg:h-footer">
         {/* -----------FIRST COLUMN ------------------ */}
         <div className="flex flex-col sm:flex-row col1 h-1/2 sm:h-3/4">
           <div className="items-center justify-center hidden w-full h-full sm:flex sm:w-1/3">
-            <h1>LOGO HERE</h1>
+            <img
+              src="/assets/LogowithName.svg"
+              className="w-auto h-64 "
+              layout="responsive"
+            />
           </div>
           {/* ------------------------- SECOND COLUMN ------------------------- */}
           <div className="flex w-full h-full sm:w-2/3 ">
@@ -17,7 +22,7 @@ const Footer = () => {
                   Enquiries
                 </h2>
               </div>
-              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+              <div className="flex flex-col items-center text-gray-400 gap-7">
                 <a>General</a>
                 <a>Guiding</a>
                 <a>Speaking</a>
@@ -30,7 +35,7 @@ const Footer = () => {
                   Quick links
                 </h2>
               </div>
-              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+              <div className="flex flex-col items-center text-gray-400 gap-7">
                 <a>1:1 Guiding</a>
                 <a>Fast-Track</a>
                 <a>Everest</a>
@@ -38,7 +43,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex-col justify-center hidden w-1/3 h-full sm:pt-16 col3 sm:flex">
-              <div className="flex flex-col items-center gap-7 text-secBlack-default">
+              <div className="flex flex-col items-center text-gray-400 gap-7">
                 <a>The Six Elements</a>
                 <a>Nimsdai Purja MBE</a>
                 <a>Project Possible</a>

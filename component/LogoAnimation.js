@@ -14,20 +14,27 @@ const LogoAnimation = () => {
   useEffect(() => {
     if (inView) {
       console.log(inView, "element in view");
+      animation.start({
+        pathLength: 1,
+        transition: { duration: 3, ease: "easeInOut" },
+      });
     }
     if (!inView) {
       console.log(inView, "not in view");
+      animation.start({
+        pathLength: 0,
+      });
     }
   }, [inView]);
 
   return (
     <>
-      <div>
+      <div className="w-auto h-52 sm:h-80">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="475.000000pt"
-          height="525.000000pt"
+          width="100%"
+          height="100%"
           ref={ref}
           viewBox="0 0 475.000000 525.000000"
           preserveAspectRatio="xMidYMid meet"

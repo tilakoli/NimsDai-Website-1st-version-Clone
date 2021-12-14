@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetter = () => {
   return (
     <>
-      <div className="flex flex-col w-screen h-screen gap-10 px-10 sm:px-48 xl:px-72">
+      <div className="flex flex-col w-screen h-screen gap-10 px-10 xl:h-footer sm:px-48 xl:px-72">
         <h1 className="mb-12 text-3xl font-bold xl:text-5xl text-secBlack-default ">
           Our newsletter
         </h1>
@@ -36,7 +36,7 @@ const NewsLetter = () => {
               </span>
             </p>
           </div>
-          <div className="flex justify-end cursor-pointer 2xl:pr-96">
+          <div className="flex justify-end mb-20 cursor-pointer 2xl:pr-96 sm:mb-0">
             <a
               href="#_"
               className="flex items-center justify-center w-40 font-medium text-center text-white uppercase h-14 bg-primary-default"
