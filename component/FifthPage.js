@@ -84,7 +84,7 @@ const FifthPage = () => {
               <motion.h3
                 ref={ref}
                 animate={animation}
-                className="pt-3 text-2xl font-semibold sm:leading-8 sm:pt-16 sm:text-4xl lg:text-5xl"
+                className="pt-3 pb-2 text-2xl font-semibold border-b-2 w-max sm:leading-8 sm:pt-16 sm:text-4xl lg:text-5xl text-secBlack-default border-primary-default"
               >
                 1:1 guiding, our <br /> chosen approach
               </motion.h3>
@@ -119,7 +119,7 @@ const FifthPage = () => {
               <motion.h3
                 ref={ref2}
                 animate={animation2}
-                className="pt-3 text-2xl font-bold sm:leading-8 sm:pt-0 sm:text-4xl md:text-5xl "
+                className="pt-3 pb-2 text-2xl font-bold border-b-2 w-max sm:leading-8 sm:pt-0 sm:text-4xl md:text-5xl text-secBlack-default border-primary-default"
               >
                 Summit Everest
               </motion.h3>
@@ -154,7 +154,7 @@ const FifthPage = () => {
               <motion.h3
                 ref={ref3}
                 animate={animation3}
-                className="pt-3 text-2xl font-semibold sm:leading-8 sm:pt-0 sm:text-4xl md:text-5xl "
+                className="pt-3 pb-2 text-2xl font-semibold border-b-2 sm:leading-8 sm:pt-0 sm:text-3xl md:text-4xl 2xl:text-5xl border-primary-default w-max "
               >
                 High altitude film &
                 <br />
